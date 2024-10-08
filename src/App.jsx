@@ -13,10 +13,10 @@ function App() {
     <div className="w-screen min-h-screen h-full bg-fuchsia-400 text-black flex justify-start items-center flex-col">
       <NavBar />
       <Routes>
-        <Route exact path={"/"} element={<Home />} />
-        <Route exact path={"/projects"} element={<Project />} />
-        <Route exact path={"/updates"} element={<Updates />} />
-        <Route exact path={"/contact"} element={<Contact />} />
+        <Route exact path={"/portfolio-site/"} element={<Home />} />
+        <Route exact path={"/portfolio-site/projects"} element={<Project />} />
+        <Route exact path={"/portfolio-site/updates"} element={<Updates />} />
+        <Route exact path={"/portfolio-site/contact"} element={<Contact />} />
       </Routes>
       <Footer />
     </div>

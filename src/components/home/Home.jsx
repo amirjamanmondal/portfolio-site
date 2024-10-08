@@ -20,14 +20,14 @@ const Home = () => {
 
   return (
     <div className="w-2/3 flex font-sans justify-center items-center text-lime-300 flex-col my-24 gap-20">
-      <div className="w-2/3 h-[20rem] flex justify-start items-center flex-col gap-6 p-4 bg-slate-400">
+      <div className="w-2/3 h-fit flex justify-start items-center flex-col gap-3">
         <h1 className="text-2xl ">Welcome, I'm Amir Jaman Mondal</h1>
         <h2 className="text-xl">
           I am passionate about <span ref={el} className="text-blue-300"></span>
         </h2>
-        <h3>Currently searching for a job as Backend Developer</h3>
+        <h3>Job Status- Searching...</h3>
         <span className="text-2xl">
-      <span>&#9200;</span> -- <span>&#9749;</span> -- <span>&#9997;</span>
+      <button className="w-fit h-fit rounded-md bg-blue-500 hover:bg-green-300 flex justify-center items-center px-2 pb-1 font-semibold text-white">more</button>
       </span>
       </div>
       <div className="h-fit p-4 w-full flex flex-col gap-10">
