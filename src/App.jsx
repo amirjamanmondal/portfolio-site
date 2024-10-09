@@ -6,6 +6,7 @@ import Updates from "./components/updates/Updates";
 import Contact from "./components/contact/Contact";
 import Home from "./components/home/Home";
 import Footer from "./components/card/Footer";
+import ViewProject from "./components/card/ViewProject";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route exact path={"/portfolio-site/projects"} element={<Project />} />
         <Route exact path={"/portfolio-site/updates"} element={<Updates />} />
         <Route exact path={"/portfolio-site/contact"} element={<Contact />} />
+        <Route exact path="/portfolio-site/updates/project" element={<ViewProject/>} />
       </Routes>
       <Footer />
     </div>
