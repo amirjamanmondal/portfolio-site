@@ -7,7 +7,9 @@ import Contact from "./components/contact/Contact";
 import Home from "./components/home/Home";
 import Footer from "./components/card/Footer";
 import ViewProject from "./components/card/ViewProject";
+import PdfViewer from "./components/card/PdfViewer";
 
+const pdfUrl = 'http://localhost:8000/file/Amir_Jaman_Mondal.pdf';
 
 function App() {
   return (
@@ -18,7 +20,12 @@ function App() {
         <Route exact path={"/portfolio-site/projects"} element={<Project />} />
         <Route exact path={"/portfolio-site/updates"} element={<Updates />} />
         <Route exact path={"/portfolio-site/contact"} element={<Contact />} />
-        <Route exact path="/portfolio-site/updates/project" element={<ViewProject/>} />
+        <Route
+          exact
+          path="/portfolio-site/updates/project/"
+          element={<ViewProject />}
+        />
+        <Route exact path="/portfolio-site/resume/" element={<PdfViewer pdfUrl={pdfUrl}/>} />
       </Routes>
       <Footer />
     </div>
