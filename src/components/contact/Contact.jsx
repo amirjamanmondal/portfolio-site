@@ -32,7 +32,7 @@ const Contact = () => {
               online_prediction
             </span>{" "}
             <label htmlFor="status" className="text-green-500">
-              Online
+              Active
             </label>
           </li>
         </ul>
